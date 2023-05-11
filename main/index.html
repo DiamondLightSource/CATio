@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>CATio &#8212; CATio 0.1.dev57+g3f4b3e4 documentation</title>
+    <title>CATio &#8212; CATio 0.1.dev58+g50e2687 documentation</title>
   
   
   
@@ -391,18 +391,21 @@ document.write(`
   <section id="catio">
 <h1>CATio<a class="headerlink" href="#catio" title="Permalink to this heading">#</a></h1>
 <p><a class="reference external" href="https://github.com/DiamondLightSource/CATio/actions/workflows/code.yml"><img alt="Code CI" src="https://github.com/DiamondLightSource/CATio/actions/workflows/code.yml/badge.svg?branch=main" /></a> <a class="reference external" href="https://github.com/DiamondLightSource/CATio/actions/workflows/docs.yml"><img alt="Docs CI" src="https://github.com/DiamondLightSource/CATio/actions/workflows/docs.yml/badge.svg?branch=main" /></a> <a class="reference external" href="https://codecov.io/gh/DiamondLightSource/CATio"><img alt="Test Coverage" src="https://codecov.io/gh/DiamondLightSource/CATio/branch/main/graph/badge.svg" /></a> <a class="reference external" href="https://pypi.org/project/CATio"><img alt="Latest PyPI version" src="https://img.shields.io/pypi/v/CATio.svg" /></a> <a class="reference external" href="https://opensource.org/licenses/Apache-2.0"><img alt="Apache License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" /></a></p>
+<p>Beckhoff produces a range of EtherCAT I/O terminals that can be connected to one
+of their industrial PCs running TwinCAT. This gives real-time polling of the
+EtherCAT bus, with set, get and monitor via the ADS protocol. CATio is designed
+to run on a different machine, introspecting the I/O chain, and making a Device
+for each of them automatically. It uses FastCS to create these Devices, which
+means the resultant control system integration can use the EPICS or Tango
+backends.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This project contains template code only. For documentation on how to
-adopt this skeleton project see
-<a class="reference external" href="https://DiamondLightSource.github.io/CATio-cli">https://DiamondLightSource.github.io/CATio-cli</a></p>
+<p>This repository is in an early stage of development, and doesn’t currently do the above!</p>
 </div>
-<p>This is where you should write a short paragraph that describes what your module does,
-how it does it, and why people should use it.</p>
 <table class="table">
 <tbody>
 <tr class="row-odd"><td><p>PyPI</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">CATio</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">catio</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>Source code</p></td>
 <td><p><a class="github reference external" href="https://github.com/DiamondLightSource/CATio">DiamondLightSource/CATio</a></p></td>
@@ -415,18 +418,6 @@ how it does it, and why people should use it.</p>
 </tr>
 </tbody>
 </table>
-<p>This is where you should put some images or code snippets that illustrate
-some relevant examples. If it is a library then you might put some
-introductory code here:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">catio</span> <span class="kn">import</span> <span class="n">__version__</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello catio </span><span class="si">{</span><span class="n">__version__</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Or if it is a commandline tool then you might put some example commands here:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python -m catio --version
-</pre></div>
-</div>
 <section id="how-the-documentation-is-structured">
 <h2>How the documentation is structured<a class="headerlink" href="#how-the-documentation-is-structured" title="Permalink to this heading">#</a></h2>
 <p>The documentation is split into 2 sections:</p>
