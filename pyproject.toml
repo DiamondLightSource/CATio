@@ -13,7 +13,7 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
 ]
-description = "One line description of your module"
+description = "Control system integration of EtherCAT I/O devices running under TwinCAT using pyads and FastCS"
 dependencies = [
     "typing-extensions;python_version<'3.8'",
 ] # Add project dependencies here, e.g. ["click", "numpy"]
@@ -49,7 +49,6 @@ GitHub = "https://github.com/DiamondLightSource/CATio"
 [[project.authors]] # Further authors may be added by duplicating this section
 email = "gregory.gay@diamond.ac.uk"
 name = "Gregory Gay"
-
 
 [tool.setuptools_scm]
 write_to = "src/catio/_version.py"

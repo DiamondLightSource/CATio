@@ -3,35 +3,24 @@ CATio
 
 |code_ci| |docs_ci| |coverage| |pypi_version| |license|
 
+Beckhoff produces a range of EtherCAT I/O terminals that can be connected to one
+of their industrial PCs running TwinCAT. This gives real-time polling of the
+EtherCAT bus, with set, get and monitor via the ADS protocol. CATio is designed
+to run on a different machine, introspecting the I/O chain, and making a Device
+for each of them automatically. It uses FastCS to create these Devices, which
+means the resultant control system integration can use the EPICS or Tango
+backends.
+
 .. note::
 
-    This project contains template code only. For documentation on how to
-    adopt this skeleton project see
-    https://DiamondLightSource.github.io/CATio-cli
-
-This is where you should write a short paragraph that describes what your module does,
-how it does it, and why people should use it.
+    This repository is in an early stage of development, and doesn't currently do the above!
 
 ============== ==============================================================
-PyPI           ``pip install CATio``
+PyPI           ``pip install catio``
 Source code    https://github.com/DiamondLightSource/CATio
 Documentation  https://DiamondLightSource.github.io/CATio
 Releases       https://github.com/DiamondLightSource/CATio/releases
 ============== ==============================================================
-
-This is where you should put some images or code snippets that illustrate
-some relevant examples. If it is a library then you might put some
-introductory code here:
-
-.. code-block:: python
-
-    from catio import __version__
-
-    print(f"Hello catio {__version__}")
-
-Or if it is a commandline tool then you might put some example commands here::
-
-    $ python -m catio --version
 
 .. |code_ci| image:: https://github.com/DiamondLightSource/CATio/actions/workflows/code.yml/badge.svg?branch=main
     :target: https://github.com/DiamondLightSource/CATio/actions/workflows/code.yml
